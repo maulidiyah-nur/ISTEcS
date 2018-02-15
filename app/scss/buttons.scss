@@ -15,4 +15,4 @@
 
 .btn-round-orange{ @include round-button($orange, $yellow) }
 .btn-round-yellow{ @include round-button($yellow, $orange) }
-  
+.but-s {padding:10px 20px;font-size: 14px;}

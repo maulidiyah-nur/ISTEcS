@@ -32,5 +32,16 @@
         color: $white;
         letter-spacing: 0;
         line-height: 38px;
+        @media (max-width: 575px){
+          max-width: 90%;
+        }
+    }
+
+    .submit-but {
+      margin-bottom: 15px;
+    }
+
+    .logo {
+      max-width: 90%;
     }
 }
