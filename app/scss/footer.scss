@@ -1,0 +1,15 @@
+.footer{
+    background-color: $black;
+    background-image: url("../images/footer-bg.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-family: 'Ubuntu';
+    color: $white;
+    line-height: 38px;
+
+    .copyright{
+        color: $yellow;
+    }
+}

@@ -1,0 +1,17 @@
+.nav{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: solid 5px $grey;
+
+    b{
+        line-height: 48px;
+    }
+
+    .item{
+        cursor: pointer;
+        
+        &:hover{
+            background-color: $grey;
+        }
+    }
+}

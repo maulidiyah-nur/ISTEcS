@@ -1,0 +1,15 @@
+@mixin round-button($color, $hover-color) {
+    background-color: $color;
+    border-radius: 20px;
+    font-family: 'Ubuntu';
+
+    &:hover,
+    &:focus{
+        background-color: $hover-color;
+        box-shadow: none;
+    }
+}
+
+.btn-round-orange{ @include round-button($orange, $yellow) }
+.btn-round-yellow{ @include round-button($yellow, $orange) }
+  

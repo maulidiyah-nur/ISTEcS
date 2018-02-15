@@ -1,0 +1,63 @@
+.schedule{
+    background-image: url('../images/bg-schedules.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 100px 0;
+
+    .item{
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 32px;
+        text-align: center;
+
+        .main{
+            border: solid 5px $dark-green;
+            font-family: 'Ubuntu';
+            position: relative;
+            padding: 20px;
+            width: 100%;
+
+            .title{
+                font-size: 64px;
+                font-weight: bold;
+                position: relative;
+                top: -90px;
+                width: 80%;
+                left: 10%;
+                padding: 20px 50px;
+                background-color: $white;
+                text-align: center;
+            }
+
+            .content{
+                position: relative;
+                top: -90px;
+                text-align: left;
+            }
+        }
+    }
+
+    @media (max-width: 575px){
+        padding: 10px 0;
+
+        .item{
+            width: 100%;
+            margin-left : 0 !important; 
+            margin-right : 0 !important; 
+
+            .main{
+                .title{
+                    font-size: 32px;
+                    top: -62px;
+                    padding: 10px 20px;
+                }
+                .content{
+                    top: -62px;
+                }
+            }
+        }
+    }
+}
