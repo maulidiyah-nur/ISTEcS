@@ -365,7 +365,8 @@
           z-index: 1; }
       @media (max-width: 1119px) {
         .schedule .owl-nav div {
-          border: none; }
+          border: none;
+          color: transparent; }
           .schedule .owl-nav div.owl-prev::before {
             left: 0px; }
           .schedule .owl-nav div.owl-next::before {
