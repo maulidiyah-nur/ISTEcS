@@ -13,8 +13,8 @@
 
 .section-title{
     width: 100%;
-    font-family: 'Ubuntu';
-    font-size: 60px;
+    font-family: 'Ubuntu-Bold';
+    font-size: 64px;
     color: $black;
     letter-spacing: 0;
     position: absolute;
@@ -28,6 +28,8 @@
     @media (max-width: 575px){
         background-image: none;
         max-width: calc(100% - 30px);
+        font-size: 48px;
+        top: -40px;
     }
     @media (min-width: 576px) {
         max-width: 540px;        

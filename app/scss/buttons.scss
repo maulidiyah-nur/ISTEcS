@@ -1,7 +1,10 @@
 @mixin round-button($color, $hover-color) {
     background-color: $color;
-    border-radius: 20px;
-    font-family: 'Ubuntu';
+    border-radius: 40px;
+    font-family: 'Ubuntu-Bold';
+    font-size: 20px;
+    color: #060084;
+    padding: 18px 32px;
 
     &:hover,
     &:focus{

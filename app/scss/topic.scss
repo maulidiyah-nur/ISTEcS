@@ -8,10 +8,15 @@
     padding-bottom: 60px;
 
     .description{
-        font-family: 'Ubuntu';
+        font-family: 'Ubuntu-Regular';
         font-size: 18px;
         letter-spacing: 0;
         line-height: 35px;
-        color: $black;
+        color: #2C1D05;
+
+        &.bold{
+            font-family: 'Ubuntu-Bold';
+            color: #000000;
+        }
     }
 }

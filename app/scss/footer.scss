@@ -1,15 +1,26 @@
 .footer{
-    background-color: $black;
+    background-color: #121B07;
     background-image: url("../images/footer-bg.png");
     background-position: center bottom;
     background-repeat: no-repeat;
     padding-top: 60px;
     padding-bottom: 30px;
-    font-family: 'Ubuntu';
     color: $white;
-    line-height: 38px;
+
+    p{
+        font-family: 'Ubuntu-Regular';
+        font-size: 20px;
+        letter-spacing: 0;
+    }
+    h5{
+        font-family: 'Ubuntu-Bold';
+        font-size: 24px;
+    }
 
     .copyright{
-        color: $yellow;
+        font-family: 'Ubuntu-Regular';
+        font-size: 14px;
+        color: #F8E71C;
+        letter-spacing: 0;
     }
 }

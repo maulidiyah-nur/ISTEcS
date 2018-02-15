@@ -9,9 +9,18 @@
 
     .item{
         cursor: pointer;
+        font-family: 'Ubuntu-Bold';
+        font-size: 20px;
+        color: #2C1D05;
+        letter-spacing: 0;
+
         
         &:hover{
             background-color: $grey;
+        }
+
+        @media (max-width: 575px){
+            font-size: 14px;
         }
     }
 }
