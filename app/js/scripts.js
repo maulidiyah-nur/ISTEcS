@@ -1,5 +1,6 @@
 $(document).ready(function(){
-    $('.owl-carousel').owlCarousel({
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
         items:1,
         margin:0,
         responsiveClass:true,
@@ -7,6 +8,22 @@ $(document).ready(function(){
         nav: true,
         navText: ["<div>PREV</div>","<div>NEXT</div>"]
     });
+
+    setOwlNav();
+
+    owl.on('changed.owl.carousel', function(event) {
+        setOwlNav();
+    });
+
+    function setOwlNav(){
+        var active = $('.owl-item.active').index();
+        var prev = active-1;
+        var prevElem = $('.owl-item').eq(prev).find('.title').text();
+        var next = active+1;
+        var nextElem = $('.owl-item').eq(next).find('.title').text();
+        $('.owl-prev div').text(prevElem);
+        $('.owl-next div').text(nextElem);
+    }
 
     new WOW().init();
 
