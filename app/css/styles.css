@@ -433,7 +433,8 @@
   background-repeat: no-repeat;
   padding-top: 60px;
   padding-bottom: 30px;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  line-height: 40px; }
   .footer p {
     font-family: 'Ubuntu-Regular';
     font-size: 20px;
