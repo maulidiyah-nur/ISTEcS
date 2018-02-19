@@ -14,12 +14,98 @@
         <!-- endbuild -->
     </head>
     <body>
+    <!-- Modal -->
+    <div class="modal fade" id="registration" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h5 class="modal-title" id="exampleModalLabel">Register now</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row form">
+                <div class="col-12 col-sm-6 list">
+                  <label>First Name</label>
+                  <input type="text" class="form-control">
+                </div><!-- list -->
+                <div class="col-12 col-sm-6 list">
+                  <label>Last Name</label>
+                  <input type="text" class="form-control">
+                </div><!-- list -->
+                <div class="col-12 col-sm-6 list">
+                  <label>Email</label>
+                  <input type="email" class="form-control">
+                </div><!-- list -->
+                <div class="col-12 col-sm-6 list">
+                  <label>Phone Number</label>
+                  <input type="number" class="form-control">
+                </div><!-- list -->
+                <div class="col-12 col-sm-6 list">
+                  <label>Password</label>
+                  <input type="password" class="form-control">
+                </div><!-- list -->
+                <div class="col-12 col-sm-6 list">
+                  <label>Re-type Password</label>
+                  <input type="password" class="form-control">
+                </div><!-- list -->
+                <div class="col-12 list text-right">
+                  <small>Already have account?  <a data-dismiss="modal" data-toggle="modal" data-target="#login">Login here</a></small>
+                </div><!-- list -->
+              </div><!-- row -->
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="but-s btn btn-round-blank" data-dismiss="modal">Close</button>
+            <button type="button" class="but-s btn btn-round-orange">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h5 class="modal-title" id="exampleModalLabel">LOGIN</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row form">
+                <div class="col-12 list">
+                  <label>Email</label>
+                  <input type="email" class="form-control">
+                </div><!-- list -->
+                <div class="col-12 list">
+                  <label>Password</label>
+                  <input type="password" class="form-control">
+                </div><!-- list -->
+                <div class="col-12 list text-right">
+                  <small>Don't have account?  <a data-dismiss="modal" data-toggle="modal" data-target="#registration">Register here</a></small>
+                </div><!-- list -->
+              </div><!-- row -->
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="but-s btn btn-round-blank" data-dismiss="modal">Close</button>
+            <button type="button" class="but-s btn btn-round-orange">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
         <!-- header -->
         <section class="header">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-xl-4 offset-xl-8 text-center submit-but">
-                        <button type="button" class="btn btn-round-orange">SUBMIT PAPER</button>
+                        <button type="button" class="btn btn-round-orange" data-toggle="modal" data-target="#login">SUBMIT PAPER</button>
                     </div>
                 </div>
                 <div class="row">

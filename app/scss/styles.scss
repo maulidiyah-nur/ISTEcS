@@ -32,7 +32,7 @@
         top: -40px;
     }
     @media (min-width: 576px) {
-        max-width: 540px;        
+        max-width: 540px;
     }
     @media (min-width: 768px) {
         max-width: 720px;
@@ -44,4 +44,23 @@
         max-width: 1140px;
     }
 }
-
+.form {
+  .list {
+    margin-bottom: 20px;
+  }
+  a {
+    color: #F5A623 !important;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .form-control {
+    height: 55px;
+  }
+}
+.modal-title {
+  width: 100%;
+  text-align: center;
+}
+.modal-content {
+  border-radius: 20px;
+}

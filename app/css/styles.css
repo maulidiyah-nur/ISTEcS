@@ -478,3 +478,21 @@
   @media (min-width: 1200px) {
     .section-title {
       max-width: 1140px; } }
+
+.form .list {
+  margin-bottom: 20px; }
+
+.form a {
+  color: #F5A623 !important;
+  font-weight: bold;
+  cursor: pointer; }
+
+.form .form-control {
+  height: 55px; }
+
+.modal-title {
+  width: 100%;
+  text-align: center; }
+
+.modal-content {
+  border-radius: 20px; }
