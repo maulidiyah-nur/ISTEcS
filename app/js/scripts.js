@@ -10,6 +10,16 @@ $(document).ready(function(){
 			nav.removeClass("stick wow bounceInDown");	
 		}
     });
+
+    $('.navbar-toggler').click(function(){
+        setTimeout(function(){
+            console.log($('.navbar-collapse').hasClass('show'))
+            if($('.navbar-collapse').hasClass('show'))
+                nav.addClass("stick wow bounceInDown");
+            else
+                nav.removeClass("stick wow bounceInDown");	
+        }, 500);
+    })
     
     var owl = $('.owl-carousel');
     owl.owlCarousel({
