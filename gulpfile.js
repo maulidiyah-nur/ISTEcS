@@ -39,10 +39,10 @@ gulp.task('watch', ['browserSync', 'sass'], function(){
 
 gulp.task('js', function() {
     return gulp.src([
-        'node_modules/jquery/dist/jquery.min.js',
-        'node_modules/bootstrap/dist/js/bootstrap.min.js',
-        'node_modules/wow.js/dist/wow.min.js',
-        'node_modules/owl.carousel/dist/owl.carousel.min.js'
+        'node_modules/jquery/docs/jquery.min.js',
+        'node_modules/bootstrap/docs/js/bootstrap.min.js',
+        'node_modules/wow.js/docs/wow.min.js',
+        'node_modules/owl.carousel/docs/owl.carousel.min.js'
     ])
     .pipe(gulp.dest('app/js'))
 })
@@ -50,7 +50,7 @@ gulp.task('js', function() {
 gulp.task('css', function() {
     return gulp.src([
         'node_modules/wow.js/css/libs/animate.css',
-        'node_modules/owl.carousel/dist/assets/owl.carousel.min.css'
+        'node_modules/owl.carousel/docs/assets/owl.carousel.min.css'
     ])
     .pipe(gulp.dest('app/css'))
 })
@@ -60,7 +60,7 @@ gulp.task('useref', function(){
     .pipe(useref())
     .pipe(gulpIf('*.js', uglify()))
     .pipe(gulpIf('*.css', cssnano()))
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('docs'))
 });
 
 gulp.task('images', function(){
@@ -68,20 +68,20 @@ gulp.task('images', function(){
     .pipe(cache(imagemin({
         interlaced: true
     })))
-    .pipe(gulp.dest('dist/images'))
+    .pipe(gulp.dest('docs/images'))
 });
 
 gulp.task('fonts', function() {
     return gulp.src('app/fonts/**/*')
-    .pipe(gulp.dest('dist/fonts'))
+    .pipe(gulp.dest('docs/fonts'))
 })
 
-gulp.task('clean:dist', function() {
-    return del.sync('dist');
+gulp.task('clean:docs', function() {
+    return del.sync('docs');
 })
 
 gulp.task('build', function (callback) {
-    runSequence('clean:dist', 
+    runSequence('clean:docs', 
       ['sass', 'js', 'css', 'useref', 'images', 'fonts'],
       callback
     )

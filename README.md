@@ -14,7 +14,7 @@ gulp
 
 ## BUILD OPTIMIZE ASSET
 
-Build result saved on /dist folder
+Build result saved on /docs folder
 
 ```
 
