@@ -565,8 +565,7 @@
   .paper .item {
     width: 100%;
     margin-top: 32px 0 0 0;
-    text-align: center;
-    border: solid 1px #FFFFFF; }
+    text-align: center; }
     .paper .item .title {
       font-family: 'Ubuntu-Bold';
       font-size: 20px;
