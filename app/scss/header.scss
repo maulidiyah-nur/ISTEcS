@@ -21,13 +21,14 @@
     &:after{
         content: '';
         position: absolute;
+        display: inline-block;
         background-image: url('../images/header-attribute.svg');
-        background-position: bottom -1px center;
+        background-position: bottom center;
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: 105%;
         width: 100%;
         height: 100%;
-        top: 0;
+        top: 10px;
         left: 0;
     }
 

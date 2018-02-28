@@ -203,7 +203,10 @@
           display: none; } }
   .navbar.stick {
     position: fixed;
-    background-color: #9DBD4F; }
+    background-color: #9DBD4F;
+    height: 88px; }
+    .navbar.stick .navbar-brand .brand-image {
+      margin-bottom: unset; }
     .navbar.stick .navbar-brand .brand-title {
       display: none; }
   .navbar .navbar-toggler {
@@ -215,7 +218,7 @@
   .navbar .navbar-collapse .navbar-nav {
     display: inline-table;
     width: 100%;
-    height: 63px; }
+    height: 50px; }
     .navbar .navbar-collapse .navbar-nav .nav-item {
       display: table-cell;
       vertical-align: bottom;
@@ -264,13 +267,14 @@
   .header:after {
     content: '';
     position: absolute;
+    display: inline-block;
     background-image: url("../images/header-attribute.svg");
-    background-position: bottom -1px center;
+    background-position: bottom center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 105%;
     width: 100%;
     height: 100%;
-    top: 0;
+    top: 10px;
     left: 0; }
   .header .header-logo {
     max-width: 90%;
@@ -561,7 +565,8 @@
   .paper .item {
     width: 100%;
     margin-top: 32px 0 0 0;
-    text-align: center; }
+    text-align: center;
+    border: solid 1px #FFFFFF; }
     .paper .item .title {
       font-family: 'Ubuntu-Bold';
       font-size: 20px;
@@ -728,4 +733,5 @@
   letter-spacing: 0;
   line-height: 70px;
   text-align: center;
-  background: #000000; }
+  background: #000000;
+  border: solid 1px #000000; }
