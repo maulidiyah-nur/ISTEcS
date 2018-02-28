@@ -28,6 +28,17 @@
         }
     }
 
+    &.stick{
+        position: fixed;
+        background-color: #9DBD4F;
+
+        .navbar-brand{
+            .brand-title{
+                display: none;
+            }
+        }
+    }
+
     .navbar-toggler{
         height: 63px;
         width: 63px;

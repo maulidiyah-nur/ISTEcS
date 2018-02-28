@@ -1,4 +1,16 @@
 $(document).ready(function(){
+    var nav = $("nav");
+    var pos = nav.position();		
+    
+    $(window).scroll(function() {
+        var windowpos = $(window).scrollTop();
+		if (windowpos >= 700) {
+			nav.addClass("stick wow bounceInDown");
+		} else {
+			nav.removeClass("stick wow bounceInDown");	
+		}
+    });
+    
     var owl = $('.owl-carousel');
     owl.owlCarousel({
         items:1,
@@ -6,14 +18,17 @@ $(document).ready(function(){
         responsiveClass:true,
         loop: true,
         nav: true,
-        navText: ["<div>PREV</div>","<div>NEXT</div>"],
-        dots: true
+        navText: ["prev","next"],
+        dots: true,
+        animateIn: 'fadeIn'
     });
 
     setOwlNav();
 
     owl.on('changed.owl.carousel', function(event) {
-        setOwlNav();
+        setTimeout(function(){
+            setOwlNav();
+        }, 100);
     });
 
     function setOwlNav(){
@@ -22,8 +37,9 @@ $(document).ready(function(){
         var prevElem = $('.owl-item').eq(prev).find('.title').text();
         var next = active+1;
         var nextElem = $('.owl-item').eq(next).find('.title').text();
-        $('.owl-prev div').text(prevElem);
-        $('.owl-next div').text(nextElem);
+        console.log(active+" "+prev+" "+next)
+        $('.owl-prev').text(prevElem);
+        $('.owl-next').text(nextElem);
     }
 
     new WOW().init();
@@ -39,8 +55,6 @@ $(document).ready(function(){
         var NAV = $(this).parents('.nav-item');
         var CONTENT_TARGET = PARENT.data('target');
         var CONTENT_OPEN = $(this).data('open');
-
-        console.log(CONTENT_TARGET+ " "+CONTENT_OPEN);
         
         PARENT.find('.nav-item').removeClass('active');
         NAV.addClass('active');
@@ -59,5 +73,5 @@ $(document).ready(function(){
             $(this).text("SHOW LESS -");
         else
             $(this).text("READ MORE DETAILS +");
-    })
+    });
 });

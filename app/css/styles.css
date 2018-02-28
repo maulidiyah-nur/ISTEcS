@@ -201,6 +201,11 @@
       @media (max-width: 1119px) {
         .navbar .navbar-brand .brand-title {
           display: none; } }
+  .navbar.stick {
+    position: fixed;
+    background-color: #9DBD4F; }
+    .navbar.stick .navbar-brand .brand-title {
+      display: none; }
   .navbar .navbar-toggler {
     height: 63px;
     width: 63px;
