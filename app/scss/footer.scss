@@ -1,12 +1,9 @@
 .footer{
     background-color: #121B07;
-    background-image: url("../images/footer-bg.png");
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    padding-top: 60px;
-    padding-bottom: 30px;
+    padding: 60px 0;
     color: $white;
     line-height: 40px;
+
     p{
         font-family: 'Ubuntu-Regular';
         font-size: 20px;
@@ -15,12 +12,16 @@
     h5{
         font-family: 'Ubuntu-Bold';
         font-size: 24px;
+        margin-bottom: 22px;
     }
+}
 
-    .copyright{
-        font-family: 'Ubuntu-Regular';
-        font-size: 14px;
-        color: #F8E71C;
-        letter-spacing: 0;
-    }
+.copyright{
+    font-family: 'Ubuntu-Regular';
+    font-size: 14px;
+    color: #F8E71C;
+    letter-spacing: 0;
+    line-height: 70px;
+    text-align: center;
+    background: #000000;
 }

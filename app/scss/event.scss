@@ -1,11 +1,38 @@
 .event{
-    background-color: $grey;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    background: #F9F9F9;
+    background-image: url("../images/bg-event.svg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 100px 0 180px 0;
     position: relative;
+
+    .event-title{
+        font-family: 'Ubuntu-Bold';
+        font-size: 36px;
+        color: #000000;
+        letter-spacing: 0;
+        margin-bottom: 80px;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+
+        &:before{
+            content: "";
+            background-image: url("../images/title-leaves.svg");
+            background-size: 92px 81px;
+            width: 92px;
+            height: 81px;
+            position: absolute;
+            top: 0;   
+            left: calc(50% - 150px);
+            z-index: -1;
+        }
+    }
 
     .item{
         width: 100%;
+        min-height: 375px;
         background-color: $white;
         text-align: center;
         

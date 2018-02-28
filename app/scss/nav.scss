@@ -1,26 +1,93 @@
-.nav{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border-bottom: solid 5px $grey;
+.navbar{
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
 
-    b{
-        line-height: 48px;
-    }
+    .navbar-brand{
+        text-align: center;
 
-    .item{
-        cursor: pointer;
-        font-family: 'Ubuntu-Bold';
-        font-size: 20px;
-        color: #2C1D05;
-        letter-spacing: 0;
-
-        
-        &:hover{
-            background-color: $grey;
+        .brand-image{
+            width: 63px;
+            height: 63px;
+            margin-bottom: 15px;
         }
 
-        @media (max-width: 575px){
-            font-size: 14px;
+        .brand-title{
+            font-family: 'Ubuntu-Medium';
+            font-size: 10px;
+            color: #FFFFFF;
+            letter-spacing: 0;
+            line-height: 17px;
+
+            @media (max-width: 1119px){
+                display: none;
+            }
         }
     }
+
+    .navbar-toggler{
+        height: 63px;
+        width: 63px;
+        border: solid 1px rgba(255, 255, 255, 1);
+
+        .navbar-toggler-icon{
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255 ,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+    }
+    
+    .navbar-collapse{
+        .navbar-nav{
+            display: inline-table;
+            width: 100%;
+            height: 63px;
+    
+            .nav-item{
+                display: table-cell;
+                vertical-align: bottom;
+                cursor: pointer;
+    
+                .nav-link{
+                    font-family: 'Ubuntu-Bold';
+                    font-size: 16px;
+                    color: #FFFFFF !important;
+                    letter-spacing: 0;
+                    text-align: center;
+                    padding: 0;
+
+                    &:hover{
+                        color: #9DBD4F !important;
+                    }
+                }
+            }            
+        }
+
+        @media (max-width: 991px){
+            background-color: rgba(0, 0, 0, 1);
+
+            .navbar-nav{
+                height: unset;
+                display: inline-block;
+
+                .nav-item{
+                    width: 100%;
+                    display: inline-block;
+
+                    .nav-link{
+                        display: inline-block;
+                        width: 100%;
+                        text-align: center;
+                        padding: 20px 0;
+
+                        &:hover{
+                            background-color: rgba(255, 255, 255, .5);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
 }

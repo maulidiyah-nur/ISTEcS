@@ -6,7 +6,8 @@ $(document).ready(function(){
         responsiveClass:true,
         loop: true,
         nav: true,
-        navText: ["<div>PREV</div>","<div>NEXT</div>"]
+        navText: ["<div>PREV</div>","<div>NEXT</div>"],
+        dots: true
     });
 
     setOwlNav();
@@ -31,5 +32,32 @@ $(document).ready(function(){
         $('html, body').animate({
             scrollTop: $("."+$(this).data('scroll')).offset().top
         }, 2000);
+    });
+
+    $('[data-open]').click(function(){
+        var PARENT = $(this).parents('.nav');
+        var NAV = $(this).parents('.nav-item');
+        var CONTENT_TARGET = PARENT.data('target');
+        var CONTENT_OPEN = $(this).data('open');
+
+        console.log(CONTENT_TARGET+ " "+CONTENT_OPEN);
+        
+        PARENT.find('.nav-item').removeClass('active');
+        NAV.addClass('active');
+
+        $('#'+CONTENT_TARGET).find('.content-item').removeClass('active full');
+        $('#'+CONTENT_TARGET).find('.'+CONTENT_OPEN).addClass('active');
+        $('.nav-expander').text('READ MORE DETAILS +');
+    })
+
+    $('.nav-expander').click(function(){
+        var ACTIVE_ITEM = $('.nav-content .content-item.active');
+
+        ACTIVE_ITEM.toggleClass('full');
+
+        if(ACTIVE_ITEM.hasClass('full'))
+            $(this).text("SHOW LESS -");
+        else
+            $(this).text("READ MORE DETAILS +");
     })
 });

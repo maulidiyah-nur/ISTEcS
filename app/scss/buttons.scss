@@ -2,17 +2,23 @@
     background-color: $color;
     border-radius: 40px;
     font-family: 'Ubuntu-Bold';
-    font-size: 20px;
+    font-size: 14px;
     color: #060084;
-    padding: 18px 32px;
+    height: 38px;
+    min-width: 180px;
+    text-align: center;
+    line-height: 38px;
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 10px;
 
     &:hover,
     &:focus{
         background-color: $hover-color;
         box-shadow: none;
+        text-decoration: none;
     }
 }
 
 .btn-round-orange{ @include round-button($orange, $yellow) }
 .btn-round-yellow{ @include round-button($yellow, $orange) }
-.but-s {padding:10px 20px;font-size: 14px;}
