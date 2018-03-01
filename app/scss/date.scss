@@ -54,60 +54,65 @@
         }
     }
 
-    .submission{
-        width: 120px;
-        height: 120px;
-        -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-        transform: rotate(45deg);
-        font-family: 'Ubuntu-Medium';
-        font-size: 12px;
-        color: #000000;
-        letter-spacing: 0;
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 1;
-        padding: 10px;
-        text-align: center;
 
-        &:before{
-            content: "";
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
-            border-right: solid 60px $yellow;
-            border-top: solid 60px $yellow;
-            border-bottom: solid 60px transparent;
-            border-left: solid 60px transparent;
-            z-index: -1;
-            -webkit-transform: rotate(-45deg);
-            -moz-transform: rotate(-45deg);
-            -o-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-        }
-    }
 
     @media (min-width: 1200px){
         .date-main{
             font-size: 30px;
             margin-bottom: 0;
         }
-        .submission{
-            width: 158px;
-            height: 158px;
-            font-size: 18px;
-            
-            &:before{
-                border-right: solid 79px $yellow;
-                border-top: solid 79px $yellow;
-                border-bottom: solid 79px transparent;
-                border-left: solid 79px transparent;
-            }
-        }
+
     }
-    
+
+}
+
+.submission{
+    width: 120px;
+    height: 120px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    font-family: 'Ubuntu-Medium';
+    font-size: 12px;
+    color: #000000;
+    letter-spacing: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    padding: 10px;
+    text-align: center;
+
+    &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        border-right: solid 60px $yellow;
+        border-top: solid 60px $yellow;
+        border-bottom: solid 60px transparent;
+        border-left: solid 60px transparent;
+        z-index: -1;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+}
+@media (min-width: 1200px){
+  .submission{
+      width: 158px;
+      height: 158px;
+      font-size: 18px;
+
+      &:before{
+          border-right: solid 79px $yellow;
+          border-top: solid 79px $yellow;
+          border-bottom: solid 79px transparent;
+          border-left: solid 79px transparent;
+      }
+  }
 }

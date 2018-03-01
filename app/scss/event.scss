@@ -24,7 +24,7 @@
             width: 92px;
             height: 81px;
             position: absolute;
-            top: 0;   
+            top: 0;
             left: calc(50% - 150px);
             z-index: -1;
         }
@@ -32,20 +32,24 @@
 
     .item{
         width: 100%;
-        min-height: 375px;
+        min-height: 450px;
         background-color: $white;
         text-align: center;
-        
+        overflow: hidden;
         margin-bottom: 20px;
 
         img{
-            width: 100%;
+            max-width: inherit;
+            height: 185px;
         }
 
         .name{
             font-family: 'Ubuntu-Bold';
             font-size: 20px;
             margin: 20px 0;
+            small {
+              padding: 0px 10px;
+            }
         }
         .desc{
             font-family: 'Ubuntu-Regular';
