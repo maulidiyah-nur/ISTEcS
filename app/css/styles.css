@@ -222,7 +222,8 @@
     .navbar .navbar-collapse .navbar-nav .nav-item {
       display: table-cell;
       vertical-align: bottom;
-      cursor: pointer; }
+      cursor: pointer;
+      padding: 0px 15px; }
       .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
         font-family: 'Ubuntu-Bold';
         font-size: 16px;
@@ -365,13 +366,18 @@
     letter-spacing: 0;
     line-height: 35px; }
     .about .nav-content .content-item {
-      display: none;
-      max-height: 250px;
-      overflow: hidden; }
+      display: none; }
       .about .nav-content .content-item.active {
-        display: inline-block; }
-        .about .nav-content .content-item.active.full {
-          max-height: unset; }
+        display: inline-block;
+        max-height: unset; }
+        .about .nav-content .content-item.active.collapsed {
+          max-height: 250px;
+          overflow: hidden;
+          -webkit-transition: max-height 1s;
+          -moz-transition: max-height 1s;
+          -ms-transition: max-height 1s;
+          -o-transition: max-height 1s;
+          transition: max-height 1s; }
   .about .nav-expander {
     font-family: Ubuntu-Bold;
     font-size: 18px;
