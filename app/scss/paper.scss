@@ -126,7 +126,12 @@
             height: 160px;
             float: left;
             display: table;
-
+            .owl-prev {
+              left: -50px;
+            }
+            .owl-next {
+              right: -50px;
+            }
             .owl-next,
             .owl-prev{
                 width: 120px;

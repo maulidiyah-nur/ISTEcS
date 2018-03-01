@@ -2810,12 +2810,21 @@ tbody.collapse.show {
     .navbar-expand-lg .navbar-collapse {
       display: flex !important;
       flex-basis: auto;
-      max-width: 1200px; }
+      max-width: 1300px;
+       }
     .navbar-expand-lg .navbar-toggler {
       display: none; }
     .navbar-expand-lg .dropup .dropdown-menu {
       top: auto;
       bottom: 100%; } }
+
+@media (min-width: 1900px) {
+ .navbar-expand-lg .navbar-collapse {
+   position: absolute;
+   left: 50%;
+   transform: translate(-50%);
+ }
+}
 
 @media (max-width: 1199.98px) {
   .navbar-expand-xl > .container,

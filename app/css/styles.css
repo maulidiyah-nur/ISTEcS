@@ -222,8 +222,7 @@
     .navbar .navbar-collapse .navbar-nav .nav-item {
       display: table-cell;
       vertical-align: bottom;
-      cursor: pointer;
-      padding: 0px 15px; }
+      cursor: pointer; }
       .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
         font-family: 'Ubuntu-Bold';
         font-size: 16px;
@@ -255,7 +254,8 @@
   background-size: cover;
   position: relative;
   color: #FFFFFF;
-  padding: 180px 0; }
+  padding: 10% 0 100px;
+  height: 85vh; }
   .header:before {
     content: '';
     position: absolute;
@@ -334,7 +334,8 @@
       color: #2E5D05;
       letter-spacing: 0;
       padding: 13px 0 13px 35px;
-      display: inline-block; }
+      display: inline-block;
+      width: 100%; }
     .about .nav .nav-item:after {
       content: "";
       position: absolute;
@@ -622,6 +623,10 @@
       height: 160px;
       float: left;
       display: table; }
+      .paper .owl-nav .owl-prev {
+        left: -50px; }
+      .paper .owl-nav .owl-next {
+        right: -50px; }
       .paper .owl-nav .owl-next,
       .paper .owl-nav .owl-prev {
         width: 120px;
