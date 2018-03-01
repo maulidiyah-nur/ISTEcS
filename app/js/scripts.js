@@ -1,13 +1,13 @@
 $(document).ready(function(){
     var nav = $("nav");
-    var pos = nav.position();		
-    
+    var pos = nav.position();
+
     $(window).scroll(function() {
         var windowpos = $(window).scrollTop();
 		if (windowpos >= 700) {
 			nav.addClass("stick wow bounceInDown");
 		} else {
-			nav.removeClass("stick wow bounceInDown");	
+			nav.removeClass("stick wow bounceInDown");
 		}
     });
 
@@ -15,12 +15,12 @@ $(document).ready(function(){
         setTimeout(function(){
             console.log($('.navbar-collapse').hasClass('show'))
             if($('.navbar-collapse').hasClass('show'))
-                nav.addClass("stick wow bounceInDown");
+                nav.addClass("stick animated fadeInDown");
             else
-                nav.removeClass("stick wow bounceInDown");	
+                nav.removeClass("stick animated fadeInDown");
         }, 500);
     })
-    
+
     var owl = $('.owl-carousel');
     owl.owlCarousel({
         items:1,
@@ -65,7 +65,7 @@ $(document).ready(function(){
         var NAV = $(this).parents('.nav-item');
         var CONTENT_TARGET = PARENT.data('target');
         var CONTENT_OPEN = $(this).data('open');
-        
+
         PARENT.find('.nav-item').removeClass('active');
         NAV.addClass('active');
 

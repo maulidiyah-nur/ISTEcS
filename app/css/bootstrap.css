@@ -2809,7 +2809,8 @@ tbody.collapse.show {
       flex-wrap: nowrap; }
     .navbar-expand-lg .navbar-collapse {
       display: flex !important;
-      flex-basis: auto; }
+      flex-basis: auto;
+      max-width: 1200px; }
     .navbar-expand-lg .navbar-toggler {
       display: none; }
     .navbar-expand-lg .dropup .dropdown-menu {
