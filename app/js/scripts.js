@@ -58,9 +58,10 @@ $(document).ready(function(){
         $('html, body').animate({
             scrollTop: $("."+$(this).data('scroll')).offset().top
         }, 2000);
-    });
+    });    
 
     $('[data-open]').click(function(){
+        console.log('data-open');
         var PARENT = $(this).parents('.nav');
         var NAV = $(this).parents('.nav-item');
         var CONTENT_TARGET = PARENT.data('target');
@@ -69,19 +70,31 @@ $(document).ready(function(){
         PARENT.find('.nav-item').removeClass('active');
         NAV.addClass('active');
 
-        $('#'+CONTENT_TARGET).find('.content-item').removeClass('active full');
+        $('#'+CONTENT_TARGET).find('.content-item').removeClass('active collapsed');
         $('#'+CONTENT_TARGET).find('.'+CONTENT_OPEN).addClass('active');
+
+        console.log($('#'+CONTENT_TARGET).find('.'+CONTENT_OPEN).outerHeight());
+
+        if($('#'+CONTENT_TARGET).find('.'+CONTENT_OPEN).outerHeight() > 300){
+            $('.nav-expander').show();
+            $('#'+CONTENT_TARGET).find('.'+CONTENT_OPEN).addClass('collapsed');
+        }
+        else{
+            $('.nav-expander').hide();
+        }
         $('.nav-expander').text('READ MORE DETAILS +');
-    })
+    });
+
+    $('[data-open]:eq(0)').trigger('click');
 
     $('.nav-expander').click(function(){
         var ACTIVE_ITEM = $('.nav-content .content-item.active');
 
-        ACTIVE_ITEM.toggleClass('full');
+        ACTIVE_ITEM.toggleClass('collapsed');
 
-        if(ACTIVE_ITEM.hasClass('full'))
-            $(this).text("SHOW LESS -");
-        else
+        if(ACTIVE_ITEM.hasClass('collapsed'))
             $(this).text("READ MORE DETAILS +");
+        else
+            $(this).text("SHOW LESS -");            
     });
 });

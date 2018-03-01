@@ -56,14 +56,19 @@
 
         .content-item{
             display: none;
-            max-height: 250px;
-            overflow: hidden;
-
+            
             &.active{
                 display: inline-block;
+                max-height: unset;                
 
-                &.full{
-                    max-height: unset;
+                &.collapsed{
+                    max-height: 250px;
+                    overflow: hidden;
+                    -webkit-transition: max-height 1s; 
+                    -moz-transition: max-height 1s; 
+                    -ms-transition: max-height 1s; 
+                    -o-transition: max-height 1s; 
+                    transition: max-height 1s;  
                 }
             }
         }
