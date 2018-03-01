@@ -12,3 +12,18 @@
 @import "./support.scss";
 @import "./event.scss";
 @import "./footer.scss";
+
+.socmed-float {
+  position: fixed;
+  top: 25%;
+  right: 0px;
+  background: #fff;
+  padding: 5px;
+  z-index: 9999999;
+  .list {
+    img {
+      width: 40px;
+      margin: 3px 0px;
+    }
+  }
+}

@@ -235,7 +235,10 @@
   @media (max-width: 991px) {
     .navbar .navbar-collapse .navbar-nav {
       height: unset;
-      display: inline-block; }
+      display: inline-block;
+      background: #9DBD4F;
+      position: absolute;
+      left: 0; }
       .navbar .navbar-collapse .navbar-nav .nav-item {
         width: 100%;
         display: inline-block; }
@@ -256,6 +259,10 @@
   color: #FFFFFF;
   padding: 10% 0 100px;
   height: 85vh; }
+  @media (max-width: 550px) {
+    .header {
+      padding: 30% 0 100px;
+      height: auto; } }
   .header:before {
     content: '';
     position: absolute;
@@ -738,3 +745,14 @@
   text-align: center;
   background: #000000;
   border: solid 1px #000000; }
+
+.socmed-float {
+  position: fixed;
+  top: 25%;
+  right: 0px;
+  background: #fff;
+  padding: 5px;
+  z-index: 9999999; }
+  .socmed-float .list img {
+    width: 40px;
+    margin: 3px 0px; }

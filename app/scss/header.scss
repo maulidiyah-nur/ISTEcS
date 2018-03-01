@@ -7,6 +7,10 @@
     color: $white;
     padding: 10% 0 100px;
     height: 85vh;
+    @media (max-width: 550px) {
+      padding: 30% 0 100px;
+      height: auto;
+    }
 
     &:before {
         content: '';

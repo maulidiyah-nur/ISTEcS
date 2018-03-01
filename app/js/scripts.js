@@ -5,9 +5,9 @@ $(document).ready(function(){
     $(window).scroll(function() {
         var windowpos = $(window).scrollTop();
 		if (windowpos >= 700) {
-			nav.addClass("stick wow bounceInDown");
+			nav.addClass("stick animated fadeInDown");
 		} else {
-			nav.removeClass("stick wow bounceInDown");
+			nav.removeClass("stick animated fadenDown");
 		}
     });
 
@@ -15,9 +15,9 @@ $(document).ready(function(){
         setTimeout(function(){
             console.log($('.navbar-collapse').hasClass('show'))
             if($('.navbar-collapse').hasClass('show'))
-                nav.addClass("stick animated fadeInDown");
+                nav.addClass("stick");
             else
-                nav.removeClass("stick animated fadeInDown");
+                nav.removeClass("stick");
         }, 500);
     })
 
