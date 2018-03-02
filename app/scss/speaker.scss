@@ -20,7 +20,7 @@
             width: 92px;
             height: 81px;
             position: absolute;
-            top: 0;   
+            top: 0;
             left: calc(50% - 110px);
             z-index: -1;
         }
@@ -31,9 +31,12 @@
         position: relative;
         display: inline-block;
         width: 100%;
-        padding: 70px 10px 0px 10px;
+        padding: 70px 15px 10px;
         margin-top: 50px;
         margin-bottom: 20px;
+        // background: #fff;
+        // min-height: 320px;
+        // border-radius: 10px;
 
         &:before{
             position: absolute;
@@ -66,14 +69,19 @@
 
         .name{
             font-family: 'Ubuntu-Bold';
-            font-size: 20px;
+            font-size: 18px;
             line-height: 27px;
+            margin-bottom: 10px;
         }
 
         .desc{
             font-family: 'Ubuntu-Regular';
             font-size: 15px;
             line-height: 27px;
+            i {
+              margin-top: 15px;
+              display: block;
+            }
         }
     }
 }

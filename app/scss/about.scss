@@ -20,7 +20,7 @@
                 letter-spacing: 0;
                 padding: 13px 0 13px 35px;
                 display: inline-block;
-                width: 100%;     
+                width: 100%;
             }
 
             &:after{
@@ -53,22 +53,22 @@
         color: #2C1D05;
         letter-spacing: 0;
         line-height: 35px;
-
+        width: 100%;
         .content-item{
             display: none;
-            
+            width: 100%;
             &.active{
                 display: inline-block;
-                max-height: unset;                
+                max-height: unset;
 
                 &.collapsed{
                     max-height: 250px;
                     overflow: hidden;
-                    -webkit-transition: max-height 1s; 
-                    -moz-transition: max-height 1s; 
-                    -ms-transition: max-height 1s; 
-                    -o-transition: max-height 1s; 
-                    transition: max-height 1s;  
+                    -webkit-transition: max-height 1s;
+                    -moz-transition: max-height 1s;
+                    -ms-transition: max-height 1s;
+                    -o-transition: max-height 1s;
+                    transition: max-height 1s;
                 }
             }
         }

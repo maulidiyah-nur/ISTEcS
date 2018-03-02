@@ -2,11 +2,40 @@
     margin: 100px 0;
 
     .support-title{
-        font-family: 'Ubuntu-Bold';
-        font-size: 14px;
-        margin-bottom: 10px;
-        text-align: center;
+      font-family: 'Ubuntu-Bold';
+      font-size: 30px;
+      color: #000000;
+      letter-spacing: 0;
+      margin-bottom: 80px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+
+      &:before{
+          content: "";
+          background-image: url("../images/title-leaves.svg");
+          background-size: 70px 62px;
+          width: 70px;
+          height: 62px;
+          position: absolute;
+          top: 0;
+          left: calc(50% - 150px);
+          z-index: -1;
+      }
     }
+    @media (min-width: 1200px){
+        .support-title{
+            font-size: 36px;
+
+            &:before{
+                content: "";
+                background-size: 92px 81px;
+                width: 92px;
+                height: 81px;
+                left: calc(50% - 180px);
+            }
+        }
+      }
 
     img{
         object-fit: contain;

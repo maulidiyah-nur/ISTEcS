@@ -29,8 +29,9 @@ $(document).ready(function(){
         loop: true,
         nav: true,
         navText: ["prev","next"],
-        dots: true,
-        animateIn: 'fadeIn'
+        dots: false,
+        animateIn: 'fadeIn',
+        autoHeight:true
     });
 
     setOwlNav();
@@ -97,4 +98,8 @@ $(document).ready(function(){
         else
             $(this).text("SHOW LESS -");
     });
+});
+
+$('.nav-link').click(function(){
+  $('.navbar-collapse.collapse').removeClass('show');
 });
