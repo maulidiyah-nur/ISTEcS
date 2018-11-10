@@ -89,24 +89,6 @@
     <script src="js/wow.min.js"></script>
     <script src="js/scripts.js"></script>
     <!-- endbuild -->
-    <script>
-    $('.owl-carousel').owlCarousel({
-      loop:true,
-      margin:30,
-      nav:true,
-      responsive:{
-          0:{
-              items:1
-          },
-          600:{
-              items:3
-          },
-          1000:{
-              items:4
-          }
-      }
-    })
-    </script>
     <style>
       .owl-dots {
         width:100%;
@@ -140,7 +122,7 @@
       .navbar.stick {
         position: relative !important;
       }
-      .header:after {
+      .header:after, .event .event-title:before{
         background-image: none;
       }
     </style>
